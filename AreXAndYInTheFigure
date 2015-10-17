@@ -16,7 +16,13 @@ int _tmain(int argc, _TCHAR* argv[])
 	cin >> x;
 	cout << "Please enter the y coordinate: ";
 	cin >> y;
-	if ((pow(x, 2) + pow(y, 2) <= 16) && (pow((x + 2), 2) + pow(y, 2) > 1) && (pow((x - 2), 2) + pow(y, 2) > 4))
+	//propusnala si da napishesh dopylnitelno uslovie v pyrviq operator if
+	//bez nego programata ne raboti korektno za tochki kato (0, -2), (-1, -2), (-3, -2),
+	//koito sa izvyn zashtrihovanata chast, no se izvejda tekst, che sa vytre
+	//vtoriqt oparator if stava izlishen
+	//BRAVO! :)
+	if ((((pow(x, 2) + pow(y, 2) <= 16) && y >= 0) || ((pow((x + 2), 2) + pow(y, 2) <= 4) && y <= 0)) &&
+		(pow((x + 2), 2) + pow(y, 2) > 1) && (pow((x - 2), 2) + pow(y, 2) > 4))
 	{
 		if ((x >= -4 && x <= 4) && (y >= -2 && y <= 4))
 		{
