@@ -1,10 +1,12 @@
 // AreXAndYInTheFigure.cpp 
 //Adress of the picture: https://scontent-frt3-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/12115885_701338593299277_4238739225699940476_n.jpg?oh=9835d19067d23e355ee27667aea98ae0&oe=56C65BAC
 //Written on Visual Studio 2013
+//When entering a real number, take care to write a "." and not a "," :)
 
 #include "stdafx.h"
 #include "iostream"
 #include "cmath"
+
 using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
